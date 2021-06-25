@@ -12,9 +12,9 @@ jobs:
     - name: Downloading Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/rdphackingfree/rdpvps/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/rdphackingfree/rdpvps/main/wallpaper.jpg -OutFile wallpaper.jpg
-        Invoke-WebRequest https://raw.githubusercontent.com/rdphackingfree/rdpvps/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/rdphackingfree/xdsss/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/rdphackingfree/xdsss/main/wallpaper.jpg -OutFile wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/rdphackingfree/xdsss/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
@@ -34,5 +34,5 @@ jobs:
       run: cmd /c start.bat
     - name: RDP is ready!
       run: | 
-        Invoke-WebRequest https://raw.githubusercontent.com/rdphackingfree/rdpvps/main/loop3.ps1 -OutFile loop3.ps1
+        Invoke-WebRequest https://github.com/rdphackingfree/xdsss/blob/main/loop3.ps1 -OutFile loop3.ps1
         ./loop3.ps1
